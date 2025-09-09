@@ -71,15 +71,9 @@ kubectl get svc hello-world-service
 
 <p align="center">
   <img src="b-bugraid-screenshots/01-infra-terraform-apply.jpg" alt="Terraform Apply" width="400" style="margin: 15px;"/>
-  <img src="b-bugraid-screenshots/03-eks-creation.png" alt="EKS Creation" width="450" style="margin: 15px;"/>
+
 </p>
 
-### Logging & Monitoring
-
-<p align="center">
-  <img src="b-bugraid-screenshots/02-opensearch-ui.jpg" alt="OpenSearch UI" width="400" style="margin: 15px;"/>
-  <img src="b-bugraid-screenshots/08-cloudwatch-alarms.png" alt="CloudWatch Alarm" width="450" style="margin: 15px;"/>
-</p>
 
 ### Kubernetes Pods & Service
 
@@ -94,11 +88,13 @@ kubectl get svc hello-world-service
   <img src="b-bugraid-screenshots/10-hello-world-app.jpg" alt="Hello World App" width="500" style="margin: 20px;"/>
 </p>
 
-### CI/CD Proof
+### CI/CD Pipelien Success
 
 <p align="center">
   <img src="ci-cd-pipeline-success.jpg" alt="ci-cd-pipeline-success" width="500" style="margin: 20px;"/>
 </p>
+
+ You can refer to all the screenshots here: [Screenshots Folder](b-bugraid-screenshots/)
 
 ## Challenges Faced
 
