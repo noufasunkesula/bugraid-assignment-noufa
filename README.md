@@ -24,6 +24,23 @@ CI/CD is automated via **GitHub Actions**.
   <img src="c-assets/GitHub Actions.png" alt="GitHub Actions" width="60" style="margin: 20px;"/>
 </p>
 
+## Project Phases
+
+| Phase | Description | Tools/Services Used | Outcome |
+|-------|-------------|---------------------|---------|
+| **1. IAM & Credentials** | Created `bugraid-noufa-admin` IAM user with required permissions | AWS IAM | Secure AWS access for Terraform & kubectl |
+| **2. Terraform Init** | Wrote provider, backend config, and state management | Terraform + S3 + DynamoDB | Remote state management enabled |
+| **3. VPC Setup** | Provisioned VPC, subnets, and networking | Terraform AWS VPC Module | Network foundation for EKS |
+| **4. EKS Cluster** | Deployed EKS cluster and managed node groups | Terraform EKS Module | Running Kubernetes cluster |
+| **5. S3 Bucket** | Created versioned and encrypted bucket for logs/configs | Terraform AWS S3 | Secure log storage |
+| **6. OpenSearch** | Provisioned OpenSearch domain with FGAC + HTTPS | Terraform AWS OpenSearch | Log analytics platform ready |
+| **7. Redis** | Provisioned ElastiCache Redis cluster | Terraform AWS ElastiCache | Caching backend available |
+| **8. CloudWatch** | Enabled control plane logging and created alarm | Terraform AWS CloudWatch | Monitoring and alerting |
+| **9. App Deployment** | Deployed Hello World app, service, and Fluent Bit config | Kubernetes manifests (kubectl) | App running with LoadBalancer & logging |
+| **10. Verification** | Tested pods, services, and external ELB endpoint | kubectl, Browser | Verified app running successfully |
+| **11. CI/CD** | Designed and executed GitHub Actions workflow | GitHub Actions | Automated Terraform + kubectl deploy |
+| **12. Documentation** | Prepared README with architecture, screenshots, and challenges | Markdown + Images | Complete project repo for submission |
+
 
 ## Setup Instructions
 
