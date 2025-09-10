@@ -42,14 +42,38 @@ CI/CD is automated via **GitHub Actions**.
 | **12. Documentation** | Prepared README with architecture, screenshots, and challenges | Markdown + Images | Complete project repo for submission |
 
 
+## Quick Access Project Links 🔗
+
+- 📂 [Kubernetes Manifests](kubernetes-manifests/)
+- 📄 [Terraform Provider File (01-provider.tf)](01-provider.tf)
+- 📂 [Screenshots Folder](b-bugraid-screenshots/)  
+
+
 ## Setup Instructions
 
 ```bash
+
+# Instructions
+
+## 🔧 Prerequisites
+Make sure the following tools are installed before proceeding:
+- [Terraform] (>=1.5.0)
+- [AWS CLI] (>=2.11.0)
+- [kubectl] (>=1.27)
+
+Verify installation:
+```bash
+terraform -version
+aws --version
+kubectl version --client
+
+#clone repo
 git clone https://github.com/noufasunkesula/bugraid-assignment.git
 cd bugraid-assignment
 
-aws configure
 # Use Access Key & Secret of IAM user: bugraid-noufa-admin
+aws configure
+
 
 #terraform workflow
 terraform init
@@ -88,7 +112,7 @@ kubectl get svc hello-world-service
   <img src="b-bugraid-screenshots/10-hello-world-app.jpg" alt="Hello World App" width="500" style="margin: 20px;"/>
 </p>
 
-### CI/CD Pipelien Success
+### CI/CD Pipeline Success
 
 <p align="center">
   <img src="ci-cd-pipeline-success.jpg" alt="ci-cd-pipeline-success" width="500" style="margin: 20px;"/>
