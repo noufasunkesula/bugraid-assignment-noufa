@@ -1,8 +1,10 @@
 # BugRaid.AI – AWS EKS Microservices Deployment with CI/CD Pipeline (Hello World App)
 
-This project provisions AWS infrastructure with **Terraform**, deploys a simple **Hello World app** on **Amazon EKS**, integrates **Redis (ElastiCache)** for caching, and enables **observability** with **CloudWatch** and **OpenSearch**.
-CI/CD is automated via **GitHub Actions**.
+This project demonstrates a production-ready cloud deployment workflow by provisioning and managing infrastructure on AWS using Terraform, deploying a containerized Hello World application on Amazon EKS, and integrating managed services for caching (ElastiCache Redis), logging/analytics (OpenSearch), and monitoring/alerting (CloudWatch).
 
+A complete CI/CD pipeline (GitHub Actions) automates infrastructure provisioning and application deployment, ensuring consistent, repeatable, and secure delivery.
+
+The solution highlights infrastructure as code (IaC), observability, and real-world DevSecOps practices while addressing common challenges such as access control, state management, and cost optimization.
 
 ## Architecture
 
@@ -51,7 +53,7 @@ CI/CD is automated via **GitHub Actions**.
 
 ## Setup Instructions
 
-```bash
+```
 
 # Instructions
 
